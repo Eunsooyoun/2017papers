@@ -1,0 +1,31 @@
+●3주차(20170312-20170318)
+조교 Padis와 만나서 machine learning알고리즘에 대한 큰 틀을 잡고,
+자신이 연구하고 있는 알고리즘인 SVM에 대해서 설명해주어 그것에 대해 공부했다.
+
+1.. machine learning algorithm의 분류
+Machine learning algorithm은 크게 두 가지로 분류할 수 있다.
+우선 첫 번째로는 supervised learning
+-이것은 training data와 testing data두가지가 다 필요하다.
+두 번째로는 unsupervised learning
+-이것은 training data는 필요 없고, 단지 testing data만 필요하다.
+
+크게 나눠보면, K-means알고리즘과 clustering은 unsupervised learning에 속하고,
+Support Vector Machine(SVM)은 supervised learning에 속한다.
+
+2.. Padis가 연구하는 알고리즘은 SVM알고리즘이다.
+SVM 알고리즘은 classification에 사용된다. 이것은 최대한 margin을 많이 남기는 것에 목적을 둔다.
+(to find plane with maximum margin to data points)
+
+여기서 사용되는 support vector이라는 단어는 가장 plane이나 line에 가까운 데이터를 말한다. 
+Testing data에서 어떤 모양을 test할 때 support vector을 사용하게 된다.
+-plane은 3D에서 사용되는 것, line은 2D이다.
+
+SVM의 식을 살펴보자
+wx+b=0 이때 w는 weight를 나타내고, x는 training data, b는 origin과의 distance를 나타내게 된다.
+(1)wx+b=1
+(2)wx+b=0
+(3)wx+b=-1
+이 식들 중에서 (1)과 (3)은 support vector를 통과하는 선의 식이고, (2)번 식은 line을 의미한다.
+3.. 이 알고리즘은 데이터 수가 많으면 문제가 생긴다.
+이 알고리즘에서 Padis가 개선시킨 방향은,
+==>중앙에 있는 선택한 선과 평행하게 해서 반정도씩 데이터를 버리는 방식으로 개선을 했다고 했다.
